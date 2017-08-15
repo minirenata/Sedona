@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/logo.svg" width="138" height="70" alt="City of Sedona logo">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="gallery.html">Фото и видео</a></li>
+					<li><a href="map.html">Карта штата</a></li>
+					<li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1 class="visually-hidden">Подбор гостиниц в Седоне</h1>
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр гостиниц</h2>
+				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend class="legend-filter">Инфраструктура:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" checked>
+							Бассейн
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking">
+							Парковка
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="wifi">
+							Wi-Fi
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend class="legend-filter">Тип жилья:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" checked>
+							Гостиница
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" checked>
+							Мотель
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" checked>
+							Апартаменты
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend class="legend-filter">Стоимость в сутки</legend>
+						<input class="filter-price" type="range" name="price" min="0" max="5000" value="3000" step="500" multiple>
+						<input class="filter-price-value" type="text" name="min-price" value="" placeholder="от 0">
+						<input class="filter-price-vvalue" type="text" name="max-price" value="" placeholder="до 3000">
+					</fieldset>
+					<button class="button-filter" type="submit">Показать</button>
+				</form>
+			</section>
+			<section class="hotels-found">
+				<h2 class="visually-hidden">Список гостиниц</h2>
+					<p class="search-result-number">Найдено: 3</p>
+					<div class="sorting-panel">
+						<p class="sorting-panel-heading">Сортировка</p>
+						<ul>
+							<li class="sorting-item sorting-item-current">
+								<input class="visually-hidden" type="radio" name="sort" value="price" checked>
+							По цене
+							</li>
+							<li class="sorting-item">
+								<input class="visually-hidden" type="radio" name="sort" value="type">
+							По типу
+							</li>
+							<li class="sorting-item">
+								<input class="visually-hidden" type="radio" name="sort" value="rate">
+							По рейтингу
+							</li>
+						</ul>
+					</div>
+					<div class="sorting-arrows">
+						<ul>
+							<li>
+								<img src="img/arrow-up.svg">
+							</li>
+							<li>
+								<img src="img/arrow-down.svg"
+							</li>
+						</ul>
+					</div>
+					<ul class="list">
+						<li>
+							<h3>Amara Resort and SPA></h3>
+							<p class="properties">Гостиница</p>
+						</li>
+						<li>
+							<h3>Desert Quail Inn</h3>
+							<p class="properties">Мотель</p>
+						</li>
+						<li>
+							<h3>Villas At Poco Diablo</h3>
+							<p class="properties">Апартаменты</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
